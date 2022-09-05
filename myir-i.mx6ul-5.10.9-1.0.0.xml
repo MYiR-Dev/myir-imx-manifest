@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <default sync-j="8"/>
-
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git://github.com/Freescale" name="community"/>
-  <remote fetch="git://github.com/openembedded" name="oe"/>
-  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="git://github.com/TimesysGit"  name="Timesys"/>
-  <remote fetch="git://github.com/meta-rust"  name="rust"/>
-  <remote fetch="git://github.com/MYiR-Dev" name="MYiR-DEV"/>
-
-  <project remote="yocto" revision="a8f6e31bebc5a551fab1fec8d67489af80878f71" name="poky" path="sources/poky"/>
-  <project remote="community" revision="94f4f086c6014cbcfd10bda3540d19558c8bf0b0" name="meta-freescale" path="sources/meta-freescale"/>
-
-  <project remote="oe" revision="bb65c27a772723dfe2c15b5e1b27bcc1a1ed884c" name="meta-openembedded" path="sources/meta-openembedded"/>
-
-  <project remote="community" revision="6e0d5d90fa8dd0c7abee04bbe103bc6a5ff8a8f7" name="fsl-community-bsp-base" path="sources/base">
-    <linkfile dest="README" src="README"/>
-    <linkfile dest="setup-environment" src="setup-environment"/>
+  <remote name="MYiR-DEV" fetch="git://github.com/MYiR-Dev"/>
+  <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
+  <remote name="QT5" fetch="https://github.com/meta-qt5"/>
+  <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="community" fetch="https://github.com/Freescale"/>
+  <remote name="imx-support" fetch="https://source.codeaurora.org/external/imxsupport"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="python2" fetch="https://git.openembedded.org"/>
+  <remote name="rust" fetch="https://github.com/meta-rust"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+  
+  <default sync-j="2"/>
+  
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="9d7b7caeba7ebd6c315bf99950e4501662ddeb80">
+    <linkfile src="README" dest="README"/>
+    <linkfile src="setup-environment" dest="setup-environment"/>
   </project>
-
-  <project remote="community" revision="aea3771baa77e74762358ceb673d407e36637e5f" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
-  <project remote="community" revision="ca27d12e4964d1336e662bcc60184bbff526c857" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
-
-  <project remote="OSSystems" revision="5f365ef0f842ba4651efe88787cf9c63bc8b6cb3" name="meta-browser" path="sources/meta-browser" />
-  <project remote="rust" revision="d8d77be1292064a02adcb5e72e293604b704f69b" name="meta-rust" path="sources/meta-rust" />
-  <project remote="QT5" revision="a582fd4c810529e9af0c81700407b1955d1391d2" name="meta-qt5" path="sources/meta-qt5" />
-
-  <project remote="Timesys" revision="ef776166d7a4f7c8677137adbfd6adee6a0e2389" name="meta-timesys" path="sources/meta-timesys" />
-
-  <project remote="MYiR-DEV" revision="1428065b970ab9cfa8cc2973b1917a2e7f425964" name="meta-myir-imx" path="sources/meta-myir" upstream=" i.MX6UL-5.10-gatesgarth" >
-     <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
-     <linkfile src="README" dest="README-IMXBSP"/>
+  <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="ee3be3b5986a4aa0e73df2204a625ae1fe5df37e"/>
+  <project name="meta-clang" path="sources/meta-clang" remote="clang" revision="61faae011fb95712064f2c58abe6293f0daeeab5"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="41d4f625c6db7a778f0f9a735c2cb48e023bc49b"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="b85d08a55cb833bfc4e8b5034ff804286c67620e"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="11be3f01962df8436c5c7b0d61cd3dbd1b872905"/>
+  <project name="meta-myir-imx" path="sources/meta-myir" remote="MYiR-DEV" revision="1428065b970ab9cfa8cc2973b1917a2e7f425964" upstream="i.MX6UL-5.10-gatesgarth">
+    <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
+    <linkfile src="README" dest="README-IMXBSP"/>
   </project>
-
-
-
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="c7263d9f3cc7bbf44e7164ffeda494cf283d3dec" upstream="zeus-5.4.24-2.1.0"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="ac4ccd2fbbb599d75ca4051911fcbaca39dbe6d7"/>
+  <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="c43c29e57f16af4e77441b201855321fbd546661"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb"/>
+  <project name="meta-rust" path="sources/meta-rust" remote="rust" revision="53bfa324891966a2daf5d36dc13d4a43725aebed"/>
+  <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="00f81fbdf7fba2a09ff83d14fc3b040e9ae63b42"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="943ef2fad8428f002850e3655a3312e13d0dcb2c"/>
 </manifest>
