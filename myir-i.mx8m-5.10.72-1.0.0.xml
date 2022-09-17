@@ -2,7 +2,7 @@
 <manifest>
 
   <default sync-j="2"/>
-  <remote name="MYiR-DEV" fetch="git://github.com/MYiR-Dev"/>
+  <remote name="MYiR-DEV" fetch="https://github.com/MYiR-Dev"/>
   <remote name="CAF" fetch="https://source.codeaurora.org/external/imx"/>
   <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
   <remote name="QT5" fetch="https://github.com/meta-qt5"/>
