@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="MYiR-DEV" fetch="git://github.com/MYiR-Dev"/>
+  <remote name="MYiR-DEV" fetch="https://github.com/MYiR-Dev"/>
   <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
   <remote name="QT5" fetch="https://github.com/meta-qt5"/>
   <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
