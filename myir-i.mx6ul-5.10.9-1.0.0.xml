@@ -33,5 +33,5 @@
   <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb"/>
   <project name="meta-rust" path="sources/meta-rust" remote="rust" revision="53bfa324891966a2daf5d36dc13d4a43725aebed"/>
   <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="00f81fbdf7fba2a09ff83d14fc3b040e9ae63b42"/>
-  <project name="poky" path="sources/poky" remote="yocto" revision="943ef2fad8428f002850e3655a3312e13d0dcb2c"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="117542f23d20d67598c9dfb1c2fcb312bac898c4"/>
 </manifest>
