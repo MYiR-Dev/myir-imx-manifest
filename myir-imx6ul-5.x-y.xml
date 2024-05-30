@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="yocto" fetch="https://git.yoctoproject.org/"/>
+    <remote name="freescale" fetch="https://github.com/Freescale"/>
+    <remote name="oe" fetch="https://github.com/openembedded"/>
+    <remote name="rust" fetch="https://github.com/meta-rust"/>
+    <remote name="QT5" fetch="https://github.com/meta-qt5"/>
+    <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
+    <remote name="MYiR-DEV" fetch="https://github.com/alvictal"/>
+    
+    
+    <default sync-j="2"/>
+
+    <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="2.0"/>
+    <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="kirkstone"/>
+    <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="kirkstone"/>
+    <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="kirkstone"/>
+    <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="freescale" revision="kirkstone"/>
+    <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="freescale" revision="kirkstone"/>
+    <project name="meta-freescale.git" path="layers/meta-freescale" remote="freescale" revision="kirkstone"/>
+    <project name="meta-qt5" path="layers/meta-qt5" remote="QT5" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566" upstream="kirkstone"/>
+    <project name="meta-security" path="layers/meta-security" remote="yocto" revision="353078bc06c8b471736daab6ed193e30d533d1f1" upstream="kirkstone"/>
+    <project name="meta-browser" path="layers/meta-browser" remote="OSSystems" upstream="kirkstone"/>
+    
+    <project name="fsl-community-bsp-base" path="layers/base" remote="freescale" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
+        <linkfile src="README" dest="README"/>
+        <linkfile src="setup-environment" dest="setup-environment"/>
+    </project>
+
+    <project name="meta-myir-imx" path="layers/meta-myir" remote="MYiR-DEV" upstream="main">
+        <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
+        <linkfile src="README" dest="README-IMXBSP"/>
+    </project>
+
+   <!-- 
+    <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
+    <remote name="clang" fetch="https://github.com/kraj"/>
+    <remote name="python2" fetch="https://git.openembedded.org"/>
+    
+    <project name="meta-freescale" path="layers/meta-freescale" remote="freescale" revision="fb17bfb8edcc9560bc1beb966a68f1f4c08ecfb3" upstream="kirkstone" />
+    <project name="meta-freescale-3rdparty" path="layers/meta-freescale-3rdparty" remote="freescale" revision="9e94b64bdfebcf7bfdf2af6447cec866a4efa814" upstream="kirkstone" />
+    <project name="meta-freescale-distro" path="layers/meta-freescale-distro" remote="freescale" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" upstream="kirkstone"/>
+    <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" revision="0560b848996a0feb410a8cd8ca07c60fe2f3b5bc" upstream="kirkstone"/> 
+    
+
+    <project name="meta-clang" path="sources/meta-clang" remote="clang" revision="61faae011fb95712064f2c58abe6293f0daeeab5"/>
+
+    <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="c43c29e57f16af4e77441b201855321fbd546661"/>
+    <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb"/>
+    <project name="meta-rust" path="sources/meta-rust" remote="rust" revision="53bfa324891966a2daf5d36dc13d4a43725aebed"/>
+    <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="00f81fbdf7fba2a09ff83d14fc3b040e9ae63b42"/>-->
+    
+</manifest>
