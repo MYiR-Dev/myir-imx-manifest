@@ -33,7 +33,7 @@
   <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="0792a1f2c23e123cc4098d52b7696da990f5d8d4" upstream="mickledore" />
   <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="38e6b3e2fe0219c773f4637a09221ca5d15bf6fc" upstream="mickledore" />
 
-  <project remote="MYiR-DEV" revision="198262bb5568b7ad0c7f3c57e69577b77cbddd8c" name="meta-myir-imx" path="sources/meta-myir" upstream="i.MX93-6.1.55-mickledore" >
+  <project remote="MYiR-Dev" revision="198262bb5568b7ad0c7f3c57e69577b77cbddd8c" name="meta-myir-imx" path="sources/meta-myir" upstream="i.MX93-6.1.55-mickledore" >
      <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>
