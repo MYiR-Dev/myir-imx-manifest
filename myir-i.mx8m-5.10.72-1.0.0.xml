@@ -29,7 +29,7 @@
     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
-  <project name="meta-myir-imx" path="sources/meta-myir" remote="MYiR-DEV" revision="655fc511867559adbd80db6823aa1b270cb26abc" upstream="i.MX8M-5.10-hardknott">
+  <project name="meta-myir-imx" path="sources/meta-myir" remote="MYiR-DEV" revision="020970a6929f8b35ec224acf43299f78a3d8fca1" upstream="i.MX8M-5.10-hardknott">
     <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
