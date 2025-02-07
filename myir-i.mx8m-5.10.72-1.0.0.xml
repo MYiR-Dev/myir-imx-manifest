@@ -2,14 +2,14 @@
 <manifest>
 
   <default sync-j="2"/>
-  <remote name="MYiR-DEV" fetch="https://github.com/MYiR-Dev"/>
-  <remote name="CAF" fetch="https://source.codeaurora.org/external/imx"/>
+  <remote name="MYiR-DEV" fetch="https://github.com/moyamartin"/>
+  <remote name="CAF" fetch="https://github.com/nxp-imx"/>
   <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
   <remote name="QT5" fetch="https://github.com/meta-qt5"/>
   <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
   <remote name="clang" fetch="https://github.com/kraj"/>
   <remote name="community" fetch="https://github.com/Freescale"/>
-  <remote name="imx-support" fetch="https://source.codeaurora.org/external/imxsupport"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
   <remote name="python2" fetch="https://git.openembedded.org"/>
   <remote name="rust" fetch="https://github.com/meta-rust"/>
@@ -29,7 +29,7 @@
     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
-  <project name="meta-myir-imx" path="sources/meta-myir" remote="MYiR-DEV" revision="655fc511867559adbd80db6823aa1b270cb26abc" upstream="i.MX8M-5.10-hardknott">
+  <project name="meta-myir-imx" path="sources/meta-myir" remote="MYiR-DEV" revision="020970a6929f8b35ec224acf43299f78a3d8fca1" upstream="i.MX8M-5.10-hardknott">
     <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
@@ -40,5 +40,5 @@
   <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="43f8f539d40070a70fe89136db89bf5bb1dfe7ed" upstream="hardknott"/>
   <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="93bf122d77e77aac1a917865538df84f148a8fcc" upstream="gatesgarth"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="7f719ef40896b6c78893add8485fda995b00d51d" upstream="hardknott"/>
-  <project name="poky" path="sources/poky" remote="yocto" revision="269265c00091fa65f93de6cad32bf24f1e7f72a3" upstream="hardknott"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="f462982ddb6e32052217d44c0c44e8a4df115589" upstream="hardknott"/>
 </manifest>
