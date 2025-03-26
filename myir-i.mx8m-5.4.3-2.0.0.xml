@@ -3,14 +3,14 @@
 
   <default sync-j="2"/>
 
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git://github.com/Freescale" name="community"/>
-  <remote fetch="git://github.com/openembedded" name="oe"/>
-  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="git://github.com/TimesysGit"  name="Timesys"/>
-  <remote fetch="git://github.com/meta-rust"  name="rust"/>
-  <remote fetch="git://github.com/MYiR-Dev" name="MYiR-DEV"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
+  <remote fetch="https://github.com/meta-rust"  name="rust"/>
+  <remote fetch="https://github.com/MYiR-Dev" name="MYiR-DEV"/>
 
   <project remote="yocto" revision="a8f6e31bebc5a551fab1fec8d67489af80878f71" name="poky" path="sources/poky"/>
   <project remote="community" revision="94f4f086c6014cbcfd10bda3540d19558c8bf0b0" name="meta-freescale" path="sources/meta-freescale"/>
@@ -31,7 +31,7 @@
 
   <project remote="Timesys" revision="ef776166d7a4f7c8677137adbfd6adee6a0e2389" name="meta-timesys" path="sources/meta-timesys" />
 
-  <project remote="MYiR-DEV" revision="50991aee6a38f00a7648e961b7296a8dfaa5c6c6" name="meta-myir-imx" path="sources/meta-myir" upstream="i.MX8M-5.4-zeus" >
+  <project remote="MYiR-DEV" revision="12f4c91356e5f97c67966cb8aea2cc3e762e09d7" name="meta-myir-imx" path="sources/meta-myir" upstream="i.MX8M-5.4-zeus" >
      <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>
