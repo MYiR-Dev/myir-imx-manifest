@@ -25,7 +25,7 @@ Your build host must install required packages for Yocto builds. Please refer to
 ```bash
 mkdir myir-lmx91-6.6.36
 cd myir-lmx91-6.6.36
-repo init -u https://github.com/LokVahKoor/myir-imx-manifest -b i.MX91-6.6.36-scarthgap -m myir-6.6.36-1.0.0.xml
+repo init -u https://github.com/MYiR-Dev/myir-imx-manifest -b i.MX91-6.6.36-scarthgap -m myir-6.6.36-1.0.0.xml
 repo sync
 ```
 
