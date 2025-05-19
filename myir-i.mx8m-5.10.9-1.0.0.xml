@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="MYiR-DEV" fetch="git://github.com/MYiR-Dev"/>
+  <remote name="MYiR-DEV" fetch="https://github.com/MYiR-Dev"/>
   <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
   <remote name="QT5" fetch="https://github.com/meta-qt5"/>
   <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
@@ -27,7 +27,7 @@
     <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
-  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="nxp-imx-support" revision="c7263d9f3cc7bbf44e7164ffeda494cf283d3dec" upstream="zeus-5.4.24-2.1.0"/>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="60578a5dbbfc9abc360a12e2cef7b64bfa582904" upstream="gatesgarth-5.10.9-1.0.0"/>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="ac4ccd2fbbb599d75ca4051911fcbaca39dbe6d7"/>
   <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="c43c29e57f16af4e77441b201855321fbd546661"/>
   <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb"/>
