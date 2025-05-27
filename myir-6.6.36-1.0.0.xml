@@ -35,7 +35,7 @@
   <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="4dc3f4bdfde4a86904b6e1a3d58df4696e7a63fa" upstream="scarthgap"/>
   <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="6a80f140e387621f62964209a2e07d3bcfb125ce" upstream="scarthgap"/>
 
-  <project name="meta-myir-imx" remote="MYiR-Dev" path="sources/meta-myir" revision="d8962ccf67ca67009df94776f4a9414fc2405b58" upstream="i.MX91-6.6.36-scarthgap">
+  <project name="meta-myir-imx" remote="MYiR-Dev" path="sources/meta-myir" revision="169558d17d275f800d9537ce6a40698a550722b4" upstream="i.MX91-6.6.36-scarthgap">
      <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>
