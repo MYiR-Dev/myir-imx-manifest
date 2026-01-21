@@ -12,7 +12,7 @@
   <remote name="qt"          fetch="https://code.qt.io/yocto"/>
   <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
 
-  <remote name="MYiR-Dev"     fetch="https://github.com/MYiR-Dev"/>
+  <remote name="MYiR-DEV"     fetch="https://github.com/MYiR-Dev"/>
   <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
 
   <project name="poky" remote="yp" path="sources/poky" revision="a57506c46d92bf0767060102d2139be06d46f575" upstream="mickledore"/>
