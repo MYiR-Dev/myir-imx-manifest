@@ -35,7 +35,7 @@
   <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="38e6b3e2fe0219c773f4637a09221ca5d15bf6fc" upstream="mickledore" />
   <project name="meta-swupdate" remote="swupdate" path="sources/meta-swupdate" revision="ec42fbc54048060c500ca6fabe6616cb608b293a" upstream="mickledore" />
 
-  <project remote="MYiR-Dev" revision="80d02de055bdbdf85b3ab08dd19396d08f7d2771" name="meta-myir-imx" path="sources/meta-myir" upstream="i.MX93-6.1.55-mickledore" >
+  <project remote="MYiR-Dev" revision="1d1b367c31f62a0887a468e24e52dd2f76e8469e" name="meta-myir-imx" path="sources/meta-myir" upstream="i.MX93-6.1.55-mickledore" >
      <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>
