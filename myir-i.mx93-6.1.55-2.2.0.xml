@@ -12,7 +12,7 @@
   <remote name="qt"          fetch="https://code.qt.io/yocto"/>
   <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
 
-  <remote name="MYiR-Dev"     fetch="https://github.com/MYiR-Dev"/>
+  <remote name="MYiR-DEV"     fetch="https://github.com/MYiR-Dev"/>
   <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
   <remote name="swupdate" fetch="https://github.com/sbabic"/>
 
