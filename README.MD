@@ -16,6 +16,6 @@ $: chmod a+x ~/bin/repo
 $: PATH=${PATH}:~/bin
 $: mkdir yoctotutor
 $: cd yoctotutor
-$: repo init -u https://github.com/viyaraembedded/viyara-imx-manifest.git --no-clone-bundle --depth=1 -m viyara-i.mx6ul.xml 
+$: repo init -u https://github.com/viyaraembedded/viyara-imx-manifest.git -b i.MX6UL-5.10-gatesgarth --no-clone-bundle --depth=1 -m viyara-i.mx6ul-5.10.9-1.0.0.xml
 $: repo sync
 ```
