@@ -37,7 +37,7 @@
   <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="3adeff0c300011fb7e4130dac5c54dc2e6e4fb2b" upstream="master" />
   <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="38008d99d5bedc7d9769b9e95e3d6019a2df1698" upstream="walnascar" />
   <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.12.49_2.2.0" upstream="walnascar-6.12.49-2.2.0" />
-  <project name="meta-myir-imx" remote="myir" path="sources/meta-myir" revision="dd29c3029e3e2d0693b510c58ad56318053c464b" upstream="6.12.49-walnascar">
+  <project name="meta-myir-imx" remote="myir" path="sources/meta-myir" revision="8c1a08a88c5793dcd30abbc50598b8d36767a79f" upstream="6.12.49-walnascar">
      <linkfile src="tools/myir-setup-release.sh" dest="myir-setup-release.sh" />
      <linkfile src="README.md" dest="README.md" />
   </project>
